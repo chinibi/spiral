@@ -1,0 +1,24 @@
+{
+  "name": "solution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "spiral.js",
+  "dependencies": {
+    "prompt": "^1.0.0",
+    "text-table": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinibi/spiral.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chinibi/spiral/issues"
+  },
+  "homepage": "https://github.com/chinibi/spiral#readme"
+}

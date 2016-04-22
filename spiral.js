@@ -1,5 +1,7 @@
-var walk = require('./walk')
-var prompt = require('prompt')
+var walk = require('./walk'),
+    prompt = require('prompt'),
+    table = require('text-table')
+
 var spiralArray = []
 
 function spiral(n) {
@@ -20,5 +22,5 @@ function spiral(n) {
 prompt.start()
 console.log('get an nxn spiral. enter n:')
 prompt.get(['n'], function (err, result) {
-  console.log(spiral(result.n))
+  console.log(table(spiral(result.n)))
 })
