@@ -7,15 +7,13 @@ function spiral(n) {
     spiralArray = spiral(n-1)
     var start = (n-1)*(n-1) + 1
     if (n%2 === 0) {
-      start = walk.Down(spiralArray, start)
-      walk.Left(spiralArray,start)
+      walk.DownAndLeft(spiralArray, start)
     }
     else {
-      start = walk.Up(spiralArray, start)
-      walk.Right(spiralArray, start)
+      walk.UpAndRight(spiralArray, start)
     }
   }
   return spiralArray
 }
 
-console.log(spiral(3))
+console.log(spiral(5))
