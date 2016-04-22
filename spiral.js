@@ -1,4 +1,5 @@
 var walk = require('./walk')
+var prompt = require('prompt')
 var spiralArray = []
 
 function spiral(n) {
@@ -16,4 +17,8 @@ function spiral(n) {
   return spiralArray
 }
 
-console.log(spiral(5))
+prompt.start()
+console.log('get an nxn spiral. enter n:')
+prompt.get(['n'], function (err, result) {
+  console.log(spiral(result.n))
+})
